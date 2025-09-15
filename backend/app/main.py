@@ -37,10 +37,10 @@ async def receive_event(request: Request):
 
     try:
         requests.post(DISCORD_WEBHOOK, json={
-            "content": f"🚨 [{ts}] {seq} → {desc}"
+            "content": f" [{ts}] {seq} → {desc}"
         })
     except Exception as e:
-        print("❌ Błąd wysyłania do Discord:", e)
+        print("Błąd wysyłania do Discord:", e)
 
     return {"status": "ok", "timestamp": ts, "code": seq, "description": desc}
 
