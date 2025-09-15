@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL = "https://stqc-decoder.onrender.com"; // <- podmień na swój adres Render
+const API_URL = "https://sqtc-osp.onrender.com"; // <- podmień na swój adres Render
 
 function App() {
   const [logs, setLogs] = useState([]);
